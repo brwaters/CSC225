@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in {00..13};
+for i in {00..15};
     do
         cat ./input/input$i.txt | java ArrayMatch | diff ./output/output$i.txt - >/dev/null
         if [ $? -eq 0 ]; then
